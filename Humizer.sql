@@ -13,7 +13,7 @@ CREATE FUNCTION [dbo].[Humanizer]
 (
     --Add the parameters for the function here
     @dt DATETIME,
-    @isDetail BIT,
+    @isDetail BIT = 0,
     @culture VARCHAR(10) = 'fa-IR'
 )
 RETURNS NVARCHAR(256)
